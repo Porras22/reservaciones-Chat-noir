@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario de Reservas</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header>
+      <div class="notificiacion">
+          <img class="logo" src="img/ff103cc8de960a9721ce70100f8e000e--cos.jpg" alt="">
+          <h1>Reservaciones Chat noir </h1>
+        </div>
+  </header>
+ 
+      <section class="centro">   
+        <article>
+          <div id="Receptor">
+              <h2>Registra la siguiente informacion</h2>
+               <h1>Nombre Completo:</h1>
+              <input  type="text" id="NC" placeholder="Nombre completo" >
+              <h1>Correo Electronico:</h1>
+              <input  type="text" id="CE" placeholder="Correo Electronico">
+              <h1>Tarjeta de credito:</h1>
+              <input type="text" id="TC" placeholder="tarjeta de credito ">
+              <br>
+              <h1>Telefono:</h1>
+              <input type="number" id="TE">
+              <div id="titulo-conceptos" >
+                <h1>Numero de reservaciones</h1>
+                  <input id="n-conceptos" type="number"  min="0" max="20" value="0">
+                  <button id="generar" onclick="generar();">Generar</button>
+              </div>
+            </div>
+          </article>
+                    
+         
+          <article>
+            <div><article >
+              <h1>Cosas que debes tomar en cuenta</h1>
+              <ol>
+                  <li>--Si hay 1 adulto Pueden incluir 4 menores en la habitacion.  </li>
+                  <li>--Si hay 2 adultos Pueden incluir 3 menores en la habitacion.  </li>
+                  <li>--Si hay 3 adultos Pueden incluir 2 menores en la habitacion.  </li>
+                  <li>--Si hay 4 adultos no puede ingresar niños. </li>
+                </ol>
+              
+           </article>
+          </div>
+          </article>
+          <article>
+            <div id="cuerpo" >
+            <h2>informacion de la reservacion: </h2>
+            <div id="conceptos">
+            </div>
+            <button id="agregar" class="agregar">Agregar reservacion</button>
+            <button id="ticket" class="ticket" onclick="generarTicket();">Generar Ticket</button>
+        </div>
+      </article>
+  
+          <article >
+            <div id="totales">
+              <table>
+                  <tr>
+                      <th>Subtotal:</th>
+                      <td id="subTotal">0.00</td>
+                  </tr>
+                  <tr>
+                      <th>IVA:</th>
+                      <td id="iva">0.00</td>
+                  </tr>
+                  <tr>
+                      <th>Total:</th>
+                      <td id="total">0.00</td>
+                  </tr>
+              </table>
+          </div>
+          </article>
+       
+    
+
+       </section>
+       
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
